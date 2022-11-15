@@ -13,14 +13,9 @@ def square(turtleName, x,y):
   turtleName.penup()
   turtleName.goto(x,y)
   turtleName.pendown()
-  turtleName.forward(sideOfSquare)
-  turtleName.left(90)
-  turtleName.forward(sideOfSquare)
-  turtleName.left(90)
-  turtleName.forward(sideOfSquare)
-  turtleName.left(90)
-  turtleName.forward(sideOfSquare)
-  turtleName.left(90)
+  for i in range(4):
+    turtleName.forward(sideOfSquare)
+    turtleName.left(90)
 
 # Instructions for user
 print ("Enter (x,y) coordinates to draw a square with a length of " + str(sideOfSquare) +"pixels")
